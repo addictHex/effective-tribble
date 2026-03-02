@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mayur Gosai – Data Engineer • Auckland NZ</title>
+  <meta name="description" content="Data Engineer with 8+ years in streaming & batch pipelines | AWS & Azure certified | Hands-on with hardware & embedded projects"/>
+  
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      background: #0f172a;
+      color: #e2e8f0;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    /* ── Hero / Header ──────────────────────────────────────── */
+    .hero {
+      padding: 4rem 0 3.5rem;
+      text-align: center;
+      background: linear-gradient(to bottom, #0f172a, #1e293b);
+    }
+
+    .profile-pic img {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #60a5fa;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+      margin-bottom: 1.8rem;
+    }
+
+    .hero h1 {
+      font-size: 2.8rem;
+      color: #93c5fd;
+      margin-bottom: 0.5rem;
+    }
+
+    .title {
+      font-size: 1.55rem;
+      color: #60a5fa;
+      margin-bottom: 1.4rem;
+    }
+
+    .tagline {
+      font-size: 1.25rem;
+      color: #cbd5e1;
+      margin: 1.2rem 0 1.8rem;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .tagline strong {
+      color: #93c5fd;
+    }
+
+    .highlights {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.9rem;
+      font-size: 1.05rem;
+      max-width: 580px;
+      margin: 0 auto;
+    }
+
+    .highlights li {
+      padding-left: 1.8rem;
+      position: relative;
+    }
+
+    .highlights li:before {
+      content: "→";
+      color: #60a5fa;
+      position: absolute;
+      left: 0;
+      font-weight: bold;
+    }
+
+    /* ── Info sections ──────────────────────────────────────── */
+    .info-section {
+      padding: 2.5rem 0 4rem;
+      background: #1e293b;
+    }
+
+    .card {
+      background: #0f172a;
+      border: 1px solid #334155;
+      border-radius: 12px;
+      padding: 1.8rem;
+      margin-bottom: 2rem;
+    }
+
+    .card:last-child {
+      margin-bottom: 0;
+    }
+
+    h2 {
+      color: #93c5fd;
+      font-size: 1.75rem;
+      margin-bottom: 1.4rem;
+      padding-bottom: 0.7rem;
+      border-bottom: 2px solid #334155;
+    }
+
+    .entry {
+      margin-bottom: 1.5rem;
+    }
+
+    .degree {
+      font-size: 1.15rem;
+      font-weight: 600;
+      color: #93c5fd;
+    }
+
+    .meta {
+      color: #94a3b8;
+      font-style: italic;
+      margin-top: 0.3rem;
+      font-size: 0.97rem;
+    }
+
+    .certs ul {
+      list-style: none;
+      margin-top: 0.8rem;
+    }
+
+    .certs li {
+      margin: 0.55rem 0;
+      color: #cbd5e1;
+    }
+
+    /* ── Skills tags ────────────────────────────────────────── */
+    .skill-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.65rem;
+    }
+
+    .skill-tags span {
+      background: #334155;
+      color: #e2e8f0;
+      padding: 0.45rem 0.95rem;
+      border-radius: 999px;
+      font-size: 0.92rem;
+      border: 1px solid #475569;
+    }
+
+    /* ── Responsive adjustments ─────────────────────────────── */
+    @media (min-width: 640px) {
+      .hero { padding: 6rem 0 5rem; }
+      .profile-pic img { width: 170px; height: 170px; }
+      .hero h1 { font-size: 3.4rem; }
+      .title { font-size: 1.8rem; }
+      .tagline { font-size: 1.35rem; }
+      .highlights { flex-direction: row; flex-wrap: wrap; justify-content: center; gap: 1.2rem 2rem; }
+      .highlights li { padding-left: 0; }
+      .highlights li:before { display: none; }
+    }
+
+    @media (min-width: 900px) {
+      .info-section .cards-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2.5rem;
+      }
+      .card { margin-bottom: 0; padding: 2.2rem; }
+      .hero .container { padding: 0 3rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero / Introduction -->
+  <header class="hero">
+    <div class="container">
+      <div class="profile-pic">
+        <img src="./IMG20260114224135.jpg" alt="Mayur Gosai">
+      </div>
+
+      <h1>Mayur Gosai</h1>
+      <div class="title">Data Engineer</div>
+
+      <div class="tagline">
+        8+ years building reliable <strong>streaming</strong> & <strong>batch</strong> pipelines — from landing zone to modeling
+      </div>
+
+      <ul class="highlights">
+        <li>Hands-on with modern AI tools, cloud platforms, containers & DevOps</li>
+        <li>Active hobbyist interest in electronics, embedded systems & mechanical projects</li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Education + Skills -->
+  <section class="info-section">
+    <div class="container">
+
+      <div class="cards-wrapper">
+
+        <!-- Education & Certifications -->
+        <div class="card education">
+          <h2>Education & Certifications</h2>
+          
+          <div class="entry">
+            <div class="degree">Post Graduate Diploma in Information Technology</div>
+            <div class="meta">Southern Institute of Technology — 2020</div>
+          </div>
+
+          <div class="entry">
+            <div class="degree">Bachelor of Science in Information Technology</div>
+            <div class="meta">University of Johannesburg — 2009–2011</div>
+          </div>
+
+          <div class="entry certs">
+            <div class="degree">Certifications</div>
+            <ul>
+              <li>Microsoft Certified: Azure Data Engineer Associate</li>
+              <li>Microsoft Certified: Azure Developer Associate</li>
+              <li>AWS Certified Big Data – Specialty</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Skills -->
+        <div class="card skills">
+          <h2>Core Skills</h2>
+          <div class="skill-tags">
+            <span>Python</span>
+            <span>Java</span>
+            <span>Scala</span>
+            <span>Linux</span>
+            <span>Kubernetes</span>
+            <span>AKS</span>
+            <span>Docker</span>
+            <span>Podman</span>
+            <span>AWS</span>
+            <span>Azure</span>
+            <span>DevOps</span>
+            <span>Spark</span>
+            <span>Hadoop</span>
+            <span>Kafka</span>
+            <span>Hive</span>
+            <span>SQL / NoSQL</span>
+            <span>KSQL</span>
+            <span>KStreams</span>
+            <span>Flink</span>
+            <span>Arduino</span>
+          </div>
+        </div>
+
+      </div><!-- /.cards-wrapper -->
+
+    </div>
+  </section>
+
+</body>
+</html>
