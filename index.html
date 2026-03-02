@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mayur Gosai – Data Engineer • Hardware Tinkerer • Auckland NZ</title>
+  <meta name="description" content="Data Engineer with 8+ years in streaming & batch pipelines | AWS/Azure certified | Passionate about hardware mods, embedded systems & AI-assisted engineering"/>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+      color: #e2e8f0;
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    /* ── Hero ───────────────────────────────────────────────── */
+    .hero {
+      padding: 4rem 0 3.5rem;
+      text-align: center;
+      background: linear-gradient(to bottom, #0f172a, #1e293b);
+    }
+
+    .profile-pic img {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #60a5fa;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+      margin-bottom: 1.8rem;
+    }
+
+    .hero h1 {
+      font-size: 2.8rem;
+      color: #93c5fd;
+      margin-bottom: 0.5rem;
+    }
+
+    .title {
+      font-size: 1.55rem;
+      color: #60a5fa;
+      margin-bottom: 1.4rem;
+    }
+
+    .tagline {
+      font-size: 1.25rem;
+      color: #cbd5e1;
+      margin: 1.2rem 0 1.8rem;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .tagline strong {
+      color: #93c5fd;
+    }
+
+    .highlights {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.9rem;
+      font-size: 1.05rem;
+      max-width: 580px;
+      margin: 0 auto;
+    }
+
+    .highlights li {
+      padding-left: 1.8rem;
+      position: relative;
+    }
+
+    .highlights li:before {
+      content: "→";
+      color: #60a5fa;
+      position: absolute;
+      left: 0;
+      font-weight: bold;
+    }
+
+    /* ── Cards & Sections ───────────────────────────────────── */
+    main {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem 4rem;
+    }
+
+    .card {
+      background: rgba(30, 41, 59, 0.6);
+      border: 1px solid rgba(59, 130, 246, 0.2);
+      border-radius: 16px;
+      padding: 2rem;
+      margin-bottom: 2rem;
+      backdrop-filter: blur(6px);
+      transition: all 0.25s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      border-color: #60a5fa;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+    }
+
+    h2 {
+      color: #93c5fd;
+      font-size: 1.8rem;
+      margin-bottom: 1.2rem;
+      padding-bottom: 0.6rem;
+      border-bottom: 2px solid rgba(96, 165, 250, 0.3);
+    }
+
+    .card ul {
+      list-style: none;
+      margin: 1rem 0;
+    }
+
+    .card li {
+      margin-bottom: 0.8rem;
+      padding-left: 1.6rem;
+      position: relative;
+    }
+
+    .card li:before {
+      content: "→";
+      color: #60a5fa;
+      position: absolute;
+      left: 0;
+      font-weight: bold;
+    }
+
+    /* Skills tags */
+    .skill-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.7rem;
+    }
+
+    .skill-tags span {
+      background: #334155;
+      color: #e2e8f0;
+      padding: 0.5rem 1rem;
+      border-radius: 999px;
+      font-size: 0.95rem;
+      border: 1px solid #475569;
+    }
+
+    /* Education entry */
+    .entry {
+      margin-bottom: 1.4rem;
+    }
+
+    .degree {
+      font-size: 1.15rem;
+      font-weight: 600;
+      color: #93c5fd;
+    }
+
+    .meta {
+      color: #94a3b8;
+      font-style: italic;
+      margin-top: 0.3rem;
+      font-size: 0.97rem;
+    }
+
+    .certs ul {
+      margin-top: 0.8rem;
+      list-style: none;
+    }
+
+    .certs li {
+      margin: 0.5rem 0;
+      color: #cbd5e1;
+    }
+
+    /* Buttons */
+    .btn {
+      display: inline-block;
+      background: #3b82f6;
+      color: white;
+      padding: 0.8rem 1.6rem;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      margin-top: 1rem;
+      transition: all 0.2s;
+    }
+
+    .btn:hover {
+      background: #60a5fa;
+      transform: translateY(-2px);
+    }
+
+    .btn-outline {
+      background: transparent;
+      border: 2px solid #60a5fa;
+      color: #60a5fa;
+    }
+
+    .btn-outline:hover {
+      background: rgba(96,165,250,0.1);
+    }
+
+    /* Quote / Motivation block */
+    .quote {
+      background: rgba(30,41,59,0.4);
+      padding: 1.6rem;
+      border-radius: 12px;
+      border-left: 4px solid #60a5fa;
+      margin: 1.5rem 0;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 2.5rem 1.5rem;
+      color: #94a3b8;
+      border-top: 1px solid rgba(59,130,246,0.15);
+      font-size: 0.95rem;
+    }
+
+    /* ── Responsive ─────────────────────────────────────────── */
+    @media (min-width: 640px) {
+      .hero {
+        padding: 6rem 0 5rem;
+      }
+      .profile-pic img {
+        width: 170px;
+        height: 170px;
+      }
+      .hero h1 {
+        font-size: 3.4rem;
+      }
+      .title {
+        font-size: 1.8rem;
+      }
+      .highlights {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1.4rem 2.5rem;
+      }
+      .highlights li {
+        padding-left: 0;
+      }
+      .highlights li:before {
+        display: none;
+      }
+    }
+
+    @media (min-width: 900px) {
+      main {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2.5rem;
+      }
+      .full-width {
+        grid-column: 1 / -1;
+      }
+      .card {
+        margin-bottom: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero -->
+  <header class="hero">
+    <div class="container">
+      <div class="profile-pic">
+        <img src="./IMG20260114224135.jpg" alt="Mayur Gosai">
+      </div>
+
+      <h1>Mayur Gosai</h1>
+      <div class="title">Data Engineer</div>
+
+      <div class="tagline">
+        8+ years building reliable <strong>streaming</strong> & <strong>batch</strong> pipelines — from landing zone to modeling
+      </div>
+
+      <ul class="highlights">
+        <li>Hands-on with modern AI tools, cloud platforms, containers & DevOps</li>
+        <li>Active hobbyist interest in electronics, embedded systems & mechanical projects</li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Hardware Projects -->
+    <section class="card">
+      <h2>Hardware Projects & Reverse Engineering</h2>
+      <p>Passionate about making things work better (or differently). Most recent:</p>
+      <ul>
+        <li><strong>Microwave mod</strong> — removed time/weight dependency, added microcontroller-driven default cycles while preserving safety interlocks</li>
+        <li>Car engine rebuild → track-ready precision project</li>
+        <li>ESP32 / Pi Pico / Arduino projects (IR, sensors, LED, Zigbee)</li>
+        <li>Self-hosted stack: PhotoPrism/Immich, rclone, nftables, VPN</li>
+      </ul>
+      <p style="margin:1.5rem 0 1rem;">Full build logs, schematics, firmware & photos coming soon.</p>
+      <a href="microwave-mod.html" class="btn">Microwave Project (coming soon)</a>
+    </section>
+
+    <!-- Education & Certifications -->
+    <section class="card">
+      <h2>Education & Certifications</h2>
+      <div class="entry">
+        <div class="degree">Post Graduate Diploma in Information Technology</div>
+        <div class="meta">Southern Institute of Technology — 2020</div>
+      </div>
+      <div class="entry">
+        <div class="degree">Bachelor of Science in Information Technology</div>
+        <div class="meta">University of Johannesburg — 2009–2011</div>
+      </div>
+      <div class="entry certs">
+        <div class="degree">Certifications</div>
+        <ul>
+          <li>Microsoft Certified: Azure Data Engineer Associate</li>
+          <li>Microsoft Certified: Azure Developer Associate</li>
+          <li>AWS Certified Big Data – Specialty</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Skills (moved to own card so it can sit beside education on desktop) -->
+    <section class="card">
+      <h2>Core Skills</h2>
+      <div class="skill-tags">
+        <span>Python</span><span>Java</span><span>Scala</span>
+        <span>Linux</span><span>Kubernetes</span><span>AKS</span>
+        <span>Docker</span><span>Podman</span>
+        <span>AWS</span><span>Azure</span><span>DevOps</span>
+        <span>Spark</span><span>Hadoop</span><span>Kafka</span>
+        <span>Hive</span><span>SQL / NoSQL</span>
+        <span>KSQL</span><span>KStreams</span><span>Flink</span>
+        <span>Arduino</span>
+      </div>
+    </section>
+
+    <!-- Motivation + Contact (full width) -->
+    <section class="card full-width">
+      <h2>Why I Build Things</h2>
+      <div class="quote">
+        <p style="font-size:1.1rem;">
+          I’m motivated by solving real problems — whether that’s low-latency fraud detection at scale, automating regulatory reporting, or making everyday appliances more convenient through hardware hacks.<br><br>
+          I believe AI tools + strong fundamentals let us build bigger, faster and more reliably. Happy to talk pipelines, cloud architecture, embedded tinkering — or why I once re-engineered a microwave just because I could.
+        </p>
+      </div>
+      <p style="margin:2rem 0 1.5rem; text-align:center; font-size:1.1rem;">
+        Interested in collaboration, contracting, or just geeking out over tech?
+      </p>
+      <div style="text-align:center;">
+        <a href="mailto:mayur.nz@outlook.com" class="btn">Get in Touch</a>
+            
+        <a href="https://www.linkedin.com/in/mayur-gosai-289429137" target="_blank" class="btn btn-outline">
+          <i class="fab fa-linkedin"></i> LinkedIn
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    © 2026 Mayur Gosai • Auckland, New Zealand • Built with curiosity
+  </footer>
+
+</body>
+</html>
